@@ -5,15 +5,18 @@ body {
 
 header {
     display: flex;
-    padding: 1em;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 1em;
+    padding-bottom: 1em;
     align-items: flex-end;
     border-style: solid;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 #logo {
-    width: 80px;
-    height: 80px;
+    width: 150px;
+    height: 150px;
 }
 
 #top-menu {
@@ -21,7 +24,6 @@ header {
     padding: 0;
     margin: 0;
     flex: 1;
-    border-style: solid;
     align-items: flex-end;
 }
 
@@ -31,13 +33,13 @@ header {
     display: flex;
     list-style-type: none;
     justify-content: space-evenly;
-    border-style: solid;
-    Font-size: large;
+    flex-wrap: wrap;
+    font-size: xx-large;
     /*gap: 20px;*/
 }
 
 .menu li {
-    margin: 20px;
+    margin: 10px;
 }
 
 .pizza-container {
@@ -51,10 +53,26 @@ header {
 .pizza-item {
     width: 300px;
     margin: 20px;
-    justify-content: center;
+    display: flex;
+    flex-direction:column;
+    text-align: center;
 }
 
 .pizza-item img {
     width: 100%;
 
+}
+
+.pizza-item h2 {
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.price {
+    margin: 10px;
+}
+
+.order-button {
+    background-color: orangered;
+    border-style: none;
 }
