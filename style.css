@@ -8,6 +8,7 @@ header {
     padding: 1em;
     align-items: flex-end;
     border-style: solid;
+    justify-content: space-between;
 }
 
 #logo {
@@ -16,9 +17,10 @@ header {
 }
 
 #top-menu {
-    width: 100%;
+    max-width: 900px;
     padding: 0;
     margin: 0;
+    flex: 1;
     border-style: solid;
     align-items: flex-end;
 }
@@ -31,4 +33,28 @@ header {
     justify-content: space-evenly;
     border-style: solid;
     Font-size: large;
+    /*gap: 20px;*/
+}
+
+.menu li {
+    margin: 20px;
+}
+
+.pizza-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+    justify-content:space-evenly;
+}
+
+.pizza-item {
+    width: 300px;
+    margin: 20px;
+    justify-content: center;
+}
+
+.pizza-item img {
+    width: 100%;
+
 }
